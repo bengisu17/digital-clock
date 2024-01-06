@@ -6,7 +6,7 @@ let clock = () => {
     let period = "AM";
     if (hrs == 0) {
      hrs = 12;
-    } else if (hrs >= 12) { //some issues resolved
+    } else if (hrs >= 12) { 
     } if (hrs > 12) {
       hrs = hrs - 12;
       period = "PM";
@@ -15,7 +15,7 @@ let clock = () => {
     mins = mins < 10 ? "0" + mins : mins;
     secs = secs < 10 ? "0" + secs : secs;
   
-    let time = `${hrs}:${mins}:${secs}:${period}`;
+    let time = `${hrs}:${mins}:${secs} ${period}`;
     document.getElementById("clock").innerText = time;
     setTimeout(clock, 1000);
   };

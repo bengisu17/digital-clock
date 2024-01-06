@@ -9,7 +9,7 @@ body {
 	height: 100vh;
 	width: 100%;
 	background-color: #000;
-	color: cyan;
+	background: linear-gradient(#64dde6, #2e38ad);
 	display: grid;
 	place-items: center;
 	font-size: 50px;
